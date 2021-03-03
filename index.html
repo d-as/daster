@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="daster">
+  <meta name="author" content="d-as">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>daster</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div
+    id="file-select"
+    class="flex-col"
+  >
+    <input
+      id="input-file"
+      type="file"
+    >
+    <label
+      for="input-density-slider"
+      class="mt"
+    >
+      <span class="flex-row flex-between">
+        <strong class="mr">
+          Pixel density
+        </strong>
+        <input
+          id="input-density"
+          type="number"
+          value="50"
+          maxlength="4"
+        >
+      </span>
+    </label>
+    <input
+      id="input-density-slider"
+      type="range"
+      value="50"
+      min="1"
+      max="1000"
+    >
+    <span
+      id="density-buttons"
+      class="flex-row mt-s button-row"
+    >
+      <button>5</button>
+      <button>10</button>
+      <button>25</button>
+      <button>50</button>
+      <button>100</button>
+    </span>
+    <span id="error"></span>
+    <button
+      id="button-rasterize"
+      class="mt-s font-16 button-xl"
+      disabled
+    >
+      Rasterize
+    </button>
+  </div>
+  <span id="loading"></span>
+  <canvas
+    id="canvas"
+    class="hidden"
+  >
+  </canvas>
+  <script src="index.js"></script>
+</body>
+</html>

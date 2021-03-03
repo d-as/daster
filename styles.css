@@ -1,0 +1,86 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 95vh;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+#error {
+  margin-top: 1rem;
+  color: red;
+}
+
+button {
+  max-width: 25vw;
+}
+
+.button-xl {
+  min-height: 4rem;
+}
+
+.button-row > button {
+  min-width: 20%;
+  min-height: 2rem;
+}
+
+.font-16 {
+  font-size: 16pt;
+}
+
+.hidden {
+  display: none;
+}
+
+.mt {
+  margin-top: 1rem;
+}
+
+.mt-s {
+  margin-top: .5rem;
+}
+
+.mb {
+ margin-bottom: 1rem; 
+}
+
+.mb-s {
+  margin-bottom: .5rem;
+}
+
+.ml {
+  margin-left: 1rem;
+}
+
+.ml-s {
+  margin-left: .5rem;
+}
+
+.mr {
+ margin-right: 1rem; 
+}
+
+.mr-s {
+  margin-right: .5rem; 
+ }
+
+#loading {
+  font-family: monospace;
+  font-size: 16pt;
+}
