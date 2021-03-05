@@ -20,5 +20,6 @@ module.exports = {
     'no-param-reassign': OFF,
     'no-plusplus': OFF,
     'no-return-assign': OFF,
+    'object-curly-newline': [ERROR, { consistent: true }],
   },
 };
