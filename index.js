@@ -200,7 +200,7 @@ const keyHandler = event => {
   } else if (!canvas.classList.contains('hidden') && ['+', '-'].includes(key)) {
     // TODO: Add zoom buttons to a visible toolbar
     // TODO: Initial zoom based on client and image dimensions (fit image to view)
-    // TODO: Draggable minimap, draggable canvas
+    // TODO: Draggable minimap, draggable canvas (?)
     const canvasScale = canvasContainer.style.width.slice(0, -'vw'.length);
     const canvasScaleNew = key === '+' ? canvasScale * 2 : canvasScale / 2;
 
